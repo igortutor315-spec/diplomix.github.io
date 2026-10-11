@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Угода користувача</title>
+<style>
+  :root {
+    --bg: #f4f6fb; --card: #ffffff; --text: #1f2937;
+    --muted: #6b7280; --accent: #2a9df4; --line: #e5e7eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1722; --card: #17212f; --text: #e5e9f0;
+      --muted: #94a3b8; --accent: #4db5ff; --line: #26334a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.7 -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    background: linear-gradient(135deg, #2a9df4, #6c5ce7);
+    color: #fff; padding: 56px 20px 80px; text-align: center;
+  }
+  header h1 { margin: 0 0 8px; font-size: clamp(26px, 5vw, 38px); }
+  header p { margin: 0; opacity: .9; }
+  main {
+    max-width: 760px; margin: -48px auto 40px; padding: 0 16px;
+  }
+  .card {
+    background: var(--card); border-radius: 16px;
+    padding: 28px clamp(20px, 4vw, 44px);
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+  }
+  h2 {
+    font-size: 21px; margin: 32px 0 8px; padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+  p, li { color: var(--text); }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  footer {
+    text-align: center; color: var(--muted);
+    font-size: 14px; padding: 0 16px 40px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Угода користувача</h1>
+  <p>Telegram-бот @your_bot · Оновлено 11.10.2026</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>1. Загальні положення</h2>
+    <p>Тут текст розділу. Користуючись ботом, ви погоджуєтесь з цією угодою.</p>
+
+    <h2>2. Права та обов'язки сторін</h2>
+    <ul>
+      <li>Пункт перший</li>
+      <li>Пункт другий</li>
+    </ul>
+
+    <h2>3. Обробка персональних даних</h2>
+    <p>Бот зберігає лише ваш Telegram ID та дані, необхідні для роботи сервісу.</p>
+
+    <h2>4. Контакти</h2>
+    <p>Зв'язок з адміністрацією: <a href="https://t.me/your_username">@your_username</a></p>
+  </div>
+</main>
+
+<footer>© 2026 · Усі права захищено</footer>
+</body>
+</html>
